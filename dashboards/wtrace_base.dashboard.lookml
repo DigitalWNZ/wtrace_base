@@ -40,6 +40,12 @@
     show_totals_labels: false
     show_silhouette: false
     totals_color: "#808080"
+    color_application:
+      collection_id: google
+      palette_id: google-categorical-0
+      options:
+        steps: 5
+    series_colors: {}
     defaults_version: 1
     listen:
       Gcp Pop Metro: result.gcp_pop_metro
@@ -60,7 +66,7 @@
     type: looker_column
     fields: [result.http_latency_us_95, result.gcp_pop_metro, result.remote_ip]
     pivots: [result.remote_ip]
-    sorts: [result.http_latency_us_95 desc 0]
+    sorts: [result.http_latency_us_95 desc 0, result.remote_ip]
     limit: 500
     query_timezone: UTC
     x_axis_gridlines: false
@@ -90,6 +96,11 @@
     show_totals_labels: false
     show_silhouette: false
     totals_color: "#808080"
+    color_application:
+      collection_id: google
+      palette_id: google-categorical-0
+      options:
+        steps: 5
     defaults_version: 1
     listen:
       Gcp Pop Metro: result.gcp_pop_metro
@@ -103,15 +114,15 @@
     col: 0
     width: 13
     height: 8
-  - title: http_95_by_isp
-    name: http_95_by_isp
+  - title: http_95_by_asn
+    name: http_95_by_asn
     model: wtrace_base
     explore: result
     type: looker_column
-    fields: [result.http_latency_us_95, result.isp, result.remote_ip]
+    fields: [result.http_latency_us_95, result.remote_ip, result.agent_asn]
     pivots: [result.remote_ip]
-    sorts: [result.http_latency_us_95 desc 0]
-    limit: 500
+    sorts: [result.http_latency_us_95 desc 0, result.remote_ip]
+    limit: 10
     query_timezone: UTC
     x_axis_gridlines: false
     y_axis_gridlines: true
@@ -140,6 +151,11 @@
     show_totals_labels: false
     show_silhouette: false
     totals_color: "#808080"
+    color_application:
+      collection_id: google
+      palette_id: google-categorical-0
+      options:
+        steps: 5
     defaults_version: 1
     listen:
       Gcp Pop Metro: result.gcp_pop_metro
@@ -160,7 +176,7 @@
     type: looker_column
     fields: [result.http_latency_us_95, result.metro, result.remote_ip]
     pivots: [result.remote_ip]
-    sorts: [result.http_latency_us_95 desc 0]
+    sorts: [result.http_latency_us_95 desc 0, result.remote_ip]
     limit: 500
     query_timezone: UTC
     x_axis_gridlines: false
@@ -190,6 +206,11 @@
     show_totals_labels: false
     show_silhouette: false
     totals_color: "#808080"
+    color_application:
+      collection_id: google
+      palette_id: google-categorical-0
+      options:
+        steps: 5
     defaults_version: 1
     listen:
       Gcp Pop Metro: result.gcp_pop_metro
@@ -210,7 +231,7 @@
     type: looker_column
     fields: [result.metro, result.http_latency_us_50, result.remote_ip]
     pivots: [result.remote_ip]
-    sorts: [result.http_latency_us_50 desc 0]
+    sorts: [result.http_latency_us_50 desc 0, result.remote_ip]
     limit: 500
     query_timezone: UTC
     x_axis_gridlines: false
@@ -240,6 +261,11 @@
     show_totals_labels: false
     show_silhouette: false
     totals_color: "#808080"
+    color_application:
+      collection_id: google
+      palette_id: google-categorical-0
+      options:
+        steps: 5
     defaults_version: 1
     listen:
       Gcp Pop Metro: result.gcp_pop_metro
@@ -253,15 +279,15 @@
     col: 13
     width: 11
     height: 8
-  - title: http_95_by_isp_metro
-    name: http_95_by_isp_metro
+  - title: http_95_by_asn_metro
+    name: http_95_by_asn_metro
     model: wtrace_base
     explore: result
     type: looker_column
-    fields: [result.isp, result.metro, result.http_latency_us_95, result.remote_ip]
+    fields: [result.agent_asn, result.metro, result.http_latency_us_95, result.remote_ip]
     pivots: [result.remote_ip]
-    sorts: [result.http_latency_us_95 desc 0]
-    limit: 500
+    sorts: [result.http_latency_us_95 desc 0, result.remote_ip]
+    limit: 10
     query_timezone: UTC
     x_axis_gridlines: false
     y_axis_gridlines: true
@@ -290,6 +316,11 @@
     show_totals_labels: false
     show_silhouette: false
     totals_color: "#808080"
+    color_application:
+      collection_id: google
+      palette_id: google-categorical-0
+      options:
+        steps: 5
     defaults_version: 1
     listen:
       Gcp Pop Metro: result.gcp_pop_metro
@@ -303,15 +334,15 @@
     col: 0
     width: 13
     height: 9
-  - title: http_50_by_isp_metro
-    name: http_50_by_isp_metro
+  - title: http_50_by_asn_metro
+    name: http_50_by_asn_metro
     model: wtrace_base
     explore: result
     type: looker_column
-    fields: [result.isp, result.metro, result.http_latency_us_50, result.remote_ip]
+    fields: [result.agent_asn, result.metro, result.http_latency_us_50, result.remote_ip]
     pivots: [result.remote_ip]
-    sorts: [result.http_latency_us_50 desc 0]
-    limit: 500
+    sorts: [result.http_latency_us_50 desc 0, result.remote_ip]
+    limit: 10
     query_timezone: UTC
     x_axis_gridlines: false
     y_axis_gridlines: true
@@ -340,6 +371,11 @@
     show_totals_labels: false
     show_silhouette: false
     totals_color: "#808080"
+    color_application:
+      collection_id: google
+      palette_id: google-categorical-0
+      options:
+        steps: 5
     defaults_version: 1
     listen:
       Gcp Pop Metro: result.gcp_pop_metro
@@ -353,15 +389,15 @@
     col: 13
     width: 11
     height: 9
-  - title: http_50_by_isp
-    name: http_50_by_isp
+  - title: http_50_by_asn
+    name: http_50_by_asn
     model: wtrace_base
     explore: result
     type: looker_column
-    fields: [result.isp, result.http_latency_us_50, result.remote_ip]
+    fields: [result.http_latency_us_50, result.remote_ip, result.agent_asn]
     pivots: [result.remote_ip]
-    sorts: [result.http_latency_us_50 desc 0]
-    limit: 500
+    sorts: [result.http_latency_us_50 desc 0, result.remote_ip]
+    limit: 10
     query_timezone: UTC
     x_axis_gridlines: false
     y_axis_gridlines: true
@@ -390,6 +426,11 @@
     show_totals_labels: false
     show_silhouette: false
     totals_color: "#808080"
+    color_application:
+      collection_id: google
+      palette_id: google-categorical-0
+      options:
+        steps: 5
     defaults_version: 1
     listen:
       Gcp Pop Metro: result.gcp_pop_metro
@@ -410,7 +451,7 @@
     type: looker_column
     fields: [result.http_latency_us_50, result.gcp_pop_metro, result.remote_ip]
     pivots: [result.remote_ip]
-    sorts: [result.http_latency_us_50 desc 0]
+    sorts: [result.http_latency_us_50 desc 0, result.remote_ip]
     limit: 500
     query_timezone: UTC
     x_axis_gridlines: false
@@ -440,6 +481,11 @@
     show_totals_labels: false
     show_silhouette: false
     totals_color: "#808080"
+    color_application:
+      collection_id: google
+      palette_id: google-categorical-0
+      options:
+        steps: 5
     defaults_version: 1
     listen:
       Gcp Pop Metro: result.gcp_pop_metro
@@ -460,7 +506,7 @@
     type: looker_column
     fields: [result.http_latency_us_50, result.country_code, result.remote_ip]
     pivots: [result.remote_ip]
-    sorts: [result.http_latency_us_50 desc 0]
+    sorts: [result.http_latency_us_50 desc 0, result.remote_ip]
     limit: 500
     query_timezone: UTC
     x_axis_gridlines: false
@@ -490,6 +536,11 @@
     show_totals_labels: false
     show_silhouette: false
     totals_color: "#808080"
+    color_application:
+      collection_id: google
+      palette_id: google-categorical-0
+      options:
+        steps: 5
     defaults_version: 1
     listen:
       Gcp Pop Metro: result.gcp_pop_metro
@@ -510,7 +561,7 @@
     type: looker_column
     fields: [result.country_code, result.tcp_latency_us_95, result.remote_ip]
     pivots: [result.remote_ip]
-    sorts: [result.tcp_latency_us_95 desc 0]
+    sorts: [result.tcp_latency_us_95 desc 0, result.remote_ip]
     limit: 500
     query_timezone: UTC
     x_axis_gridlines: false
@@ -540,6 +591,11 @@
     show_totals_labels: false
     show_silhouette: false
     totals_color: "#808080"
+    color_application:
+      collection_id: degrees
+      palette_id: degrees-categorical-0
+      options:
+        steps: 5
     defaults_version: 1
     listen:
       Gcp Pop Metro: result.gcp_pop_metro
@@ -558,10 +614,10 @@
     model: wtrace_base
     explore: result
     type: looker_column
-    fields: [result.isp, result.tcp_latency_us_90, result.remote_ip]
+    fields: [result.tcp_latency_us_90, result.remote_ip, result.agent_asn]
     pivots: [result.remote_ip]
-    sorts: [result.tcp_latency_us_90 desc]
-    limit: 500
+    sorts: [result.tcp_latency_us_90 desc 0, result.remote_ip]
+    limit: 10
     query_timezone: UTC
     x_axis_gridlines: false
     y_axis_gridlines: true
@@ -590,6 +646,11 @@
     show_totals_labels: false
     show_silhouette: false
     totals_color: "#808080"
+    color_application:
+      collection_id: degrees
+      palette_id: degrees-categorical-0
+      options:
+        steps: 5
     defaults_version: 1
     listen:
       Gcp Pop Metro: result.gcp_pop_metro
@@ -608,10 +669,10 @@
     model: wtrace_base
     explore: result
     type: looker_column
-    fields: [result.isp, result.tcp_latency_us_95, result.remote_ip]
+    fields: [result.tcp_latency_us_95, result.remote_ip, result.agent_asn]
     pivots: [result.remote_ip]
-    sorts: [result.tcp_latency_us_95 desc]
-    limit: 500
+    sorts: [result.tcp_latency_us_95 desc 0, result.remote_ip]
+    limit: 10
     query_timezone: UTC
     x_axis_gridlines: false
     y_axis_gridlines: true
@@ -640,6 +701,12 @@
     show_totals_labels: false
     show_silhouette: false
     totals_color: "#808080"
+    color_application:
+      collection_id: degrees
+      palette_id: degrees-categorical-0
+      options:
+        steps: 5
+    series_colors: {}
     defaults_version: 1
     listen:
       Gcp Pop Metro: result.gcp_pop_metro
@@ -660,7 +727,7 @@
     type: looker_column
     fields: [result.gcp_pop_metro, result.tcp_latency_us_50, result.remote_ip]
     pivots: [result.remote_ip]
-    sorts: [result.tcp_latency_us_50 desc 0]
+    sorts: [result.tcp_latency_us_50 desc 0, result.remote_ip]
     limit: 500
     query_timezone: UTC
     x_axis_gridlines: false
@@ -690,6 +757,11 @@
     show_totals_labels: false
     show_silhouette: false
     totals_color: "#808080"
+    color_application:
+      collection_id: degrees
+      palette_id: degrees-categorical-0
+      options:
+        steps: 5
     defaults_version: 1
     listen:
       Gcp Pop Metro: result.gcp_pop_metro
@@ -710,7 +782,7 @@
     type: looker_column
     fields: [result.country_code, result.tcp_latency_us_50, result.remote_ip]
     pivots: [result.remote_ip]
-    sorts: [result.tcp_latency_us_50 desc 0]
+    sorts: [result.tcp_latency_us_50 desc 0, result.remote_ip]
     limit: 500
     query_timezone: UTC
     x_axis_gridlines: false
@@ -740,6 +812,11 @@
     show_totals_labels: false
     show_silhouette: false
     totals_color: "#808080"
+    color_application:
+      collection_id: degrees
+      palette_id: degrees-categorical-0
+      options:
+        steps: 5
     defaults_version: 1
     listen:
       Gcp Pop Metro: result.gcp_pop_metro
@@ -760,7 +837,7 @@
     type: looker_column
     fields: [result.gcp_pop_metro, result.tcp_latency_us_95, result.remote_ip]
     pivots: [result.remote_ip]
-    sorts: [result.tcp_latency_us_95 desc 0]
+    sorts: [result.tcp_latency_us_95 desc 0, result.remote_ip]
     limit: 500
     query_timezone: UTC
     x_axis_gridlines: false
@@ -790,6 +867,11 @@
     show_totals_labels: false
     show_silhouette: false
     totals_color: "#808080"
+    color_application:
+      collection_id: degrees
+      palette_id: degrees-categorical-0
+      options:
+        steps: 5
     defaults_version: 1
     listen:
       Gcp Pop Metro: result.gcp_pop_metro
@@ -810,7 +892,7 @@
     type: looker_column
     fields: [result.metro, result.tcp_latency_us_95, result.remote_ip]
     pivots: [result.remote_ip]
-    sorts: [result.tcp_latency_us_95 desc]
+    sorts: [result.tcp_latency_us_95 desc 0, result.remote_ip]
     limit: 500
     query_timezone: UTC
     x_axis_gridlines: false
@@ -840,6 +922,11 @@
     show_totals_labels: false
     show_silhouette: false
     totals_color: "#808080"
+    color_application:
+      collection_id: degrees
+      palette_id: degrees-categorical-0
+      options:
+        steps: 5
     defaults_version: 1
     listen:
       Gcp Pop Metro: result.gcp_pop_metro
@@ -853,15 +940,15 @@
     col: 0
     width: 13
     height: 8
-  - title: tcp_50_by_isp_metro (Copy)
-    name: tcp_50_by_isp_metro (Copy)
+  - title: tcp_50_by_asn_metro
+    name: tcp_50_by_asn_metro
     model: wtrace_base
     explore: result
     type: looker_column
-    fields: [result.isp, result.metro, result.tcp_latency_us_50, result.remote_ip]
+    fields: [result.agent_asn, result.metro, result.tcp_latency_us_50, result.remote_ip]
     pivots: [result.remote_ip]
-    sorts: [result.tcp_latency_us_50 desc 0]
-    limit: 500
+    sorts: [result.tcp_latency_us_50 desc 0, result.remote_ip]
+    limit: 10
     query_timezone: UTC
     x_axis_gridlines: false
     y_axis_gridlines: true
@@ -890,6 +977,11 @@
     show_totals_labels: false
     show_silhouette: false
     totals_color: "#808080"
+    color_application:
+      collection_id: degrees
+      palette_id: degrees-categorical-0
+      options:
+        steps: 5
     defaults_version: 1
     listen:
       Gcp Pop Metro: result.gcp_pop_metro
@@ -903,15 +995,15 @@
     col: 13
     width: 11
     height: 8
-  - title: tcp_95_by_isp_metro
-    name: tcp_95_by_isp_metro
+  - title: tcp_95_by_asn_metro
+    name: tcp_95_by_asn_metro
     model: wtrace_base
     explore: result
     type: looker_column
-    fields: [result.isp, result.metro, result.tcp_latency_us_95, result.remote_ip]
+    fields: [result.agent_asn, result.metro, result.tcp_latency_us_95, result.remote_ip]
     pivots: [result.remote_ip]
-    sorts: [result.tcp_latency_us_95 desc 0]
-    limit: 500
+    sorts: [result.tcp_latency_us_95 desc 0, result.remote_ip]
+    limit: 10
     query_timezone: UTC
     x_axis_gridlines: false
     y_axis_gridlines: true
@@ -940,6 +1032,11 @@
     show_totals_labels: false
     show_silhouette: false
     totals_color: "#808080"
+    color_application:
+      collection_id: degrees
+      palette_id: degrees-categorical-0
+      options:
+        steps: 5
     defaults_version: 1
     listen:
       Gcp Pop Metro: result.gcp_pop_metro
@@ -960,7 +1057,7 @@
     type: looker_column
     fields: [result.metro, result.tcp_latency_us_50, result.remote_ip]
     pivots: [result.remote_ip]
-    sorts: [result.tcp_latency_us_50 desc]
+    sorts: [result.tcp_latency_us_50 desc 0, result.remote_ip]
     limit: 500
     query_timezone: UTC
     x_axis_gridlines: false
@@ -990,6 +1087,11 @@
     show_totals_labels: false
     show_silhouette: false
     totals_color: "#808080"
+    color_application:
+      collection_id: degrees
+      palette_id: degrees-categorical-0
+      options:
+        steps: 5
     defaults_version: 1
     listen:
       Gcp Pop Metro: result.gcp_pop_metro
