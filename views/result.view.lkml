@@ -5,6 +5,7 @@ view: result {
   dimension: agent_asn {
     type: string
     sql: ${TABLE}.agent_asn ;;
+    html: {{country_code._rendered_value}} || {{value}} ;;
   }
 
   dimension: agent_ip {
@@ -68,6 +69,7 @@ view: result {
   dimension: metro {
     type: string
     sql: ${TABLE}.metro ;;
+    html: {{country_code._rendered_value}} || {{value}} ;;
   }
 
   dimension: ping_avg_latency_ms {
