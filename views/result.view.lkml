@@ -6,6 +6,7 @@ view: result {
     type: string
     sql: ${TABLE}.agent_asn ;;
     html: {{country_code._rendered_value}} || {{value}} ;;
+    suggest_persist_for: "10 minutes"
   }
 
   dimension: agent_ip {
@@ -17,6 +18,7 @@ view: result {
     type: string
     sql: ${TABLE}.country_code ;;
     drill_fields: [agent_asn,metro]
+    suggest_persist_for: "10 minutes"
   }
 
   dimension_group: datetime {
@@ -47,11 +49,13 @@ view: result {
   dimension: gcp_pop {
     type: string
     sql: ${TABLE}.gcp_pop ;;
+    suggest_persist_for: "10 minutes"
   }
 
   dimension: gcp_pop_metro {
     type: string
     sql: left(${TABLE}.gcp_pop,3) ;;
+    suggest_persist_for: "10 minutes"
     drill_fields: [agent_asn]
   }
 
@@ -64,12 +68,14 @@ view: result {
   dimension: isp {
     type: string
     sql: ${TABLE}.isp ;;
+    suggest_persist_for: "10 minutes"
   }
 
   dimension: metro {
     type: string
     sql: ${TABLE}.metro ;;
     html: {{country_code._rendered_value}} || {{value}} ;;
+    suggest_persist_for: "10 minutes"
   }
 
   dimension: ping_avg_latency_ms {
@@ -90,6 +96,7 @@ view: result {
   dimension: remote_ip {
     type: string
     sql: ${TABLE}.remote_ip ;;
+    suggest_persist_for: "10 minutes"
   }
 
   dimension: remote_ip_info {
@@ -105,6 +112,7 @@ view: result {
   dimension: run_id {
     type: string
     sql: ${TABLE}.run_id ;;
+    suggest_persist_for: "10 minutes"
   }
 
   dimension: tcp_latency_us {
