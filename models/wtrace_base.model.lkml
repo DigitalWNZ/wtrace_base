@@ -1,6 +1,7 @@
 connection: "wtrace_base"
 
 # include all the views
+include: "/dashboards/**/*.dashboard"
 include: "/views/**/*.view"
 
 datagroup: wtrace_base_default_datagroup {
