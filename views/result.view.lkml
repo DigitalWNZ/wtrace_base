@@ -15,6 +15,7 @@ view: result {
   dimension: country_code {
     type: string
     sql: ${TABLE}.country_code ;;
+    drill_fields: [agent_asn,metro]
   }
 
   dimension_group: datetime {
@@ -50,6 +51,7 @@ view: result {
   dimension: gcp_pop_metro {
     type: string
     sql: left(${TABLE}.gcp_pop,3) ;;
+    drill_fields: [agent_asn]
   }
 
   dimension: http_latency_us {
