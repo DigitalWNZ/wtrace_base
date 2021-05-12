@@ -177,7 +177,7 @@
     fields: [result.http_latency_us_95, result.metro, result.remote_ip]
     pivots: [result.remote_ip]
     sorts: [result.http_latency_us_95 desc 0, result.remote_ip]
-    limit: 500
+    limit: 10
     query_timezone: UTC
     x_axis_gridlines: false
     y_axis_gridlines: true
@@ -232,7 +232,7 @@
     fields: [result.metro, result.http_latency_us_50, result.remote_ip]
     pivots: [result.remote_ip]
     sorts: [result.http_latency_us_50 desc 0, result.remote_ip]
-    limit: 500
+    limit: 10
     query_timezone: UTC
     x_axis_gridlines: false
     y_axis_gridlines: true
@@ -893,7 +893,7 @@
     fields: [result.metro, result.tcp_latency_us_95, result.remote_ip]
     pivots: [result.remote_ip]
     sorts: [result.tcp_latency_us_95 desc 0, result.remote_ip]
-    limit: 500
+    limit: 10
     query_timezone: UTC
     x_axis_gridlines: false
     y_axis_gridlines: true
@@ -1058,7 +1058,7 @@
     fields: [result.metro, result.tcp_latency_us_50, result.remote_ip]
     pivots: [result.remote_ip]
     sorts: [result.tcp_latency_us_50 desc 0, result.remote_ip]
-    limit: 500
+    limit: 10
     query_timezone: UTC
     x_axis_gridlines: false
     y_axis_gridlines: true
