@@ -48,12 +48,12 @@
     series_colors: {}
     defaults_version: 1
     listen:
-      Gcp Pop Metro: result.gcp_pop_metro
-      ISP: result.isp
-      Metro: result.metro
       Run ID: result.run_id
       Datetime Time: result.datetime_time
       Country Code: result.country_code
+      Gcp Pop Metro: result.gcp_pop_metro
+      ISP: result.isp
+      Metro: result.metro
       Remote IP: result.remote_ip
     row: 2
     col: 0
@@ -103,12 +103,12 @@
         steps: 5
     defaults_version: 1
     listen:
-      Gcp Pop Metro: result.gcp_pop_metro
-      ISP: result.isp
-      Metro: result.metro
       Run ID: result.run_id
       Datetime Time: result.datetime_time
       Country Code: result.country_code
+      Gcp Pop Metro: result.gcp_pop_metro
+      ISP: result.isp
+      Metro: result.metro
       Remote IP: result.remote_ip
     row: 11
     col: 0
@@ -158,12 +158,12 @@
         steps: 5
     defaults_version: 1
     listen:
-      Gcp Pop Metro: result.gcp_pop_metro
-      ISP: result.isp
-      Metro: result.metro
       Run ID: result.run_id
       Datetime Time: result.datetime_time
       Country Code: result.country_code
+      Gcp Pop Metro: result.gcp_pop_metro
+      ISP: result.isp
+      Metro: result.metro
       Remote IP: result.remote_ip
     row: 19
     col: 0
@@ -213,12 +213,12 @@
         steps: 5
     defaults_version: 1
     listen:
-      Gcp Pop Metro: result.gcp_pop_metro
-      ISP: result.isp
-      Metro: result.metro
       Run ID: result.run_id
       Datetime Time: result.datetime_time
       Country Code: result.country_code
+      Gcp Pop Metro: result.gcp_pop_metro
+      ISP: result.isp
+      Metro: result.metro
       Remote IP: result.remote_ip
     row: 27
     col: 0
@@ -268,12 +268,12 @@
         steps: 5
     defaults_version: 1
     listen:
-      Gcp Pop Metro: result.gcp_pop_metro
-      ISP: result.isp
-      Metro: result.metro
       Run ID: result.run_id
       Datetime Time: result.datetime_time
       Country Code: result.country_code
+      Gcp Pop Metro: result.gcp_pop_metro
+      ISP: result.isp
+      Metro: result.metro
       Remote IP: result.remote_ip
     row: 27
     col: 13
@@ -323,12 +323,12 @@
         steps: 5
     defaults_version: 1
     listen:
-      Gcp Pop Metro: result.gcp_pop_metro
-      ISP: result.isp
-      Metro: result.metro
       Run ID: result.run_id
       Datetime Time: result.datetime_time
       Country Code: result.country_code
+      Gcp Pop Metro: result.gcp_pop_metro
+      ISP: result.isp
+      Metro: result.metro
       Remote IP: result.remote_ip
     row: 35
     col: 0
@@ -378,12 +378,12 @@
         steps: 5
     defaults_version: 1
     listen:
-      Gcp Pop Metro: result.gcp_pop_metro
-      ISP: result.isp
-      Metro: result.metro
       Run ID: result.run_id
       Datetime Time: result.datetime_time
       Country Code: result.country_code
+      Gcp Pop Metro: result.gcp_pop_metro
+      ISP: result.isp
+      Metro: result.metro
       Remote IP: result.remote_ip
     row: 35
     col: 13
@@ -433,12 +433,12 @@
         steps: 5
     defaults_version: 1
     listen:
-      Gcp Pop Metro: result.gcp_pop_metro
-      ISP: result.isp
-      Metro: result.metro
       Run ID: result.run_id
       Datetime Time: result.datetime_time
       Country Code: result.country_code
+      Gcp Pop Metro: result.gcp_pop_metro
+      ISP: result.isp
+      Metro: result.metro
       Remote IP: result.remote_ip
     row: 19
     col: 13
@@ -488,12 +488,12 @@
         steps: 5
     defaults_version: 1
     listen:
-      Gcp Pop Metro: result.gcp_pop_metro
-      ISP: result.isp
-      Metro: result.metro
       Run ID: result.run_id
       Datetime Time: result.datetime_time
       Country Code: result.country_code
+      Gcp Pop Metro: result.gcp_pop_metro
+      ISP: result.isp
+      Metro: result.metro
       Remote IP: result.remote_ip
     row: 11
     col: 13
@@ -543,12 +543,12 @@
         steps: 5
     defaults_version: 1
     listen:
-      Gcp Pop Metro: result.gcp_pop_metro
-      ISP: result.isp
-      Metro: result.metro
       Run ID: result.run_id
       Datetime Time: result.datetime_time
       Country Code: result.country_code
+      Gcp Pop Metro: result.gcp_pop_metro
+      ISP: result.isp
+      Metro: result.metro
       Remote IP: result.remote_ip
     row: 2
     col: 13
@@ -598,12 +598,12 @@
         steps: 5
     defaults_version: 1
     listen:
-      Gcp Pop Metro: result.gcp_pop_metro
-      ISP: result.isp
-      Metro: result.metro
       Run ID: result.run_id
       Datetime Time: result.datetime_time
       Country Code: result.country_code
+      Gcp Pop Metro: result.gcp_pop_metro
+      ISP: result.isp
+      Metro: result.metro
       Remote IP: result.remote_ip
     row: 46
     col: 0
@@ -653,12 +653,12 @@
         steps: 5
     defaults_version: 1
     listen:
-      Gcp Pop Metro: result.gcp_pop_metro
-      ISP: result.isp
-      Metro: result.metro
       Run ID: result.run_id
       Datetime Time: result.datetime_time
       Country Code: result.country_code
+      Gcp Pop Metro: result.gcp_pop_metro
+      ISP: result.isp
+      Metro: result.metro
       Remote IP: result.remote_ip
     row: 64
     col: 13
@@ -709,12 +709,12 @@
     series_colors: {}
     defaults_version: 1
     listen:
-      Gcp Pop Metro: result.gcp_pop_metro
-      ISP: result.isp
-      Metro: result.metro
       Run ID: result.run_id
       Datetime Time: result.datetime_time
       Country Code: result.country_code
+      Gcp Pop Metro: result.gcp_pop_metro
+      ISP: result.isp
+      Metro: result.metro
       Remote IP: result.remote_ip
     row: 64
     col: 0
@@ -764,12 +764,12 @@
         steps: 5
     defaults_version: 1
     listen:
-      Gcp Pop Metro: result.gcp_pop_metro
-      ISP: result.isp
-      Metro: result.metro
       Run ID: result.run_id
       Datetime Time: result.datetime_time
       Country Code: result.country_code
+      Gcp Pop Metro: result.gcp_pop_metro
+      ISP: result.isp
+      Metro: result.metro
       Remote IP: result.remote_ip
     row: 55
     col: 13
@@ -819,12 +819,12 @@
         steps: 5
     defaults_version: 1
     listen:
-      Gcp Pop Metro: result.gcp_pop_metro
-      ISP: result.isp
-      Metro: result.metro
       Run ID: result.run_id
       Datetime Time: result.datetime_time
       Country Code: result.country_code
+      Gcp Pop Metro: result.gcp_pop_metro
+      ISP: result.isp
+      Metro: result.metro
       Remote IP: result.remote_ip
     row: 46
     col: 13
@@ -874,12 +874,12 @@
         steps: 5
     defaults_version: 1
     listen:
-      Gcp Pop Metro: result.gcp_pop_metro
-      ISP: result.isp
-      Metro: result.metro
       Run ID: result.run_id
       Datetime Time: result.datetime_time
       Country Code: result.country_code
+      Gcp Pop Metro: result.gcp_pop_metro
+      ISP: result.isp
+      Metro: result.metro
       Remote IP: result.remote_ip
     row: 55
     col: 0
@@ -929,12 +929,12 @@
         steps: 5
     defaults_version: 1
     listen:
-      Gcp Pop Metro: result.gcp_pop_metro
-      ISP: result.isp
-      Metro: result.metro
       Run ID: result.run_id
       Datetime Time: result.datetime_time
       Country Code: result.country_code
+      Gcp Pop Metro: result.gcp_pop_metro
+      ISP: result.isp
+      Metro: result.metro
       Remote IP: result.remote_ip
     row: 73
     col: 0
@@ -984,12 +984,12 @@
         steps: 5
     defaults_version: 1
     listen:
-      Gcp Pop Metro: result.gcp_pop_metro
-      ISP: result.isp
-      Metro: result.metro
       Run ID: result.run_id
       Datetime Time: result.datetime_time
       Country Code: result.country_code
+      Gcp Pop Metro: result.gcp_pop_metro
+      ISP: result.isp
+      Metro: result.metro
       Remote IP: result.remote_ip
     row: 81
     col: 13
@@ -1039,12 +1039,12 @@
         steps: 5
     defaults_version: 1
     listen:
-      Gcp Pop Metro: result.gcp_pop_metro
-      ISP: result.isp
-      Metro: result.metro
       Run ID: result.run_id
       Datetime Time: result.datetime_time
       Country Code: result.country_code
+      Gcp Pop Metro: result.gcp_pop_metro
+      ISP: result.isp
+      Metro: result.metro
       Remote IP: result.remote_ip
     row: 81
     col: 0
@@ -1094,12 +1094,12 @@
         steps: 5
     defaults_version: 1
     listen:
-      Gcp Pop Metro: result.gcp_pop_metro
-      ISP: result.isp
-      Metro: result.metro
       Run ID: result.run_id
       Datetime Time: result.datetime_time
       Country Code: result.country_code
+      Gcp Pop Metro: result.gcp_pop_metro
+      ISP: result.isp
+      Metro: result.metro
       Remote IP: result.remote_ip
     row: 73
     col: 13
@@ -1119,6 +1119,114 @@
     col: 0
     width: 24
     height: 2
+  - title: Http Latency 95 vs 50 by datetime
+    name: Http Latency 95 vs 50 by datetime
+    model: wtrace_base
+    explore: result
+    type: looker_line
+    fields: [result.datetime_time, result.http_latency_us_95, result.http_latency_us_50,
+      result.remote_ip]
+    pivots: [result.remote_ip]
+    sorts: [result.datetime_time desc]
+    limit: 500
+    x_axis_gridlines: false
+    y_axis_gridlines: true
+    show_view_names: false
+    show_y_axis_labels: true
+    show_y_axis_ticks: true
+    y_axis_tick_density: default
+    y_axis_tick_density_custom: 5
+    show_x_axis_label: true
+    show_x_axis_ticks: true
+    y_axis_scale_mode: linear
+    x_axis_reversed: false
+    y_axis_reversed: false
+    plot_size_by_field: false
+    trellis: ''
+    stacking: ''
+    limit_displayed_rows: false
+    legend_position: center
+    point_style: none
+    show_value_labels: false
+    label_density: 25
+    x_axis_scale: auto
+    y_axis_combined: true
+    show_null_points: false
+    interpolation: linear
+    color_application:
+      collection_id: b43731d5-dc87-4a8e-b807-635bef3948e7
+      palette_id: fb7bb53e-b77b-4ab6-8274-9d420d3d73f3
+      options:
+        steps: 5
+    series_types: {}
+    series_colors: {}
+    defaults_version: 1
+    show_totals_labels: false
+    show_silhouette: false
+    totals_color: "#808080"
+    listen:
+      Run ID: result.run_id
+      Datetime Time: result.datetime_time
+      Country Code: result.country_code
+      Gcp Pop Metro: result.gcp_pop_metro
+      ISP: result.isp
+      Metro: result.metro
+      Remote IP: result.remote_ip
+    row: 89
+    col: 0
+    width: 24
+    height: 10
+  - title: TCP 95 vs 50 by time
+    name: TCP 95 vs 50 by time
+    model: wtrace_base
+    explore: result
+    type: looker_line
+    fields: [result.datetime_time, result.tcp_latency_us_95, result.tcp_latency_us_50,
+      result.remote_ip]
+    pivots: [result.remote_ip]
+    sorts: [result.datetime_time desc]
+    limit: 500
+    x_axis_gridlines: false
+    y_axis_gridlines: true
+    show_view_names: false
+    show_y_axis_labels: true
+    show_y_axis_ticks: true
+    y_axis_tick_density: default
+    y_axis_tick_density_custom: 5
+    show_x_axis_label: true
+    show_x_axis_ticks: true
+    y_axis_scale_mode: linear
+    x_axis_reversed: false
+    y_axis_reversed: false
+    plot_size_by_field: false
+    trellis: ''
+    stacking: ''
+    limit_displayed_rows: false
+    legend_position: center
+    point_style: none
+    show_value_labels: false
+    label_density: 25
+    x_axis_scale: auto
+    y_axis_combined: true
+    show_null_points: false
+    interpolation: linear
+    series_types: {}
+    show_totals_labels: false
+    show_silhouette: false
+    totals_color: "#808080"
+    defaults_version: 1
+    listen:
+      Run ID: result.run_id
+      Datetime Time: result.datetime_time
+      Country Code: result.country_code
+      Gcp Pop Metro: result.gcp_pop_metro
+      ISP: result.isp
+      Metro: result.metro
+      Remote IP: result.remote_ip
+    row: 99
+    col: 0
+    width: 24
+    height: 9
   filters:
   - name: Run ID
     title: Run ID
@@ -1212,7 +1320,7 @@
     required: false
     ui_config:
       type: tag_list
-      display: inline
+      display: popover
       options: []
     model: wtrace_base
     explore: result
