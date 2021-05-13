@@ -32,7 +32,7 @@ view: result {
       quarter,
       year
     ]
-    sql: ${TABLE}.datetime ;;
+    sql: timestamp(${TABLE}.datetime) ;;
   }
 
   dimension: dest_url {
