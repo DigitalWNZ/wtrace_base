@@ -284,7 +284,7 @@
     model: wtrace_base
     explore: result
     type: looker_column
-    fields: [result.agent_asn, result.metro, result.http_latency_us_95, result.remote_ip]
+    fields: [result.http_latency_us_95, result.remote_ip, result.asn_metro]
     pivots: [result.remote_ip]
     sorts: [result.http_latency_us_95 desc 0, result.remote_ip]
     limit: 10
@@ -339,7 +339,7 @@
     model: wtrace_base
     explore: result
     type: looker_column
-    fields: [result.agent_asn, result.metro, result.http_latency_us_50, result.remote_ip]
+    fields: [result.http_latency_us_50, result.remote_ip, result.asn_metro]
     pivots: [result.remote_ip]
     sorts: [result.http_latency_us_50 desc 0, result.remote_ip]
     limit: 10
@@ -945,7 +945,7 @@
     model: wtrace_base
     explore: result
     type: looker_column
-    fields: [result.agent_asn, result.metro, result.tcp_latency_us_50, result.remote_ip]
+    fields: [result.tcp_latency_us_50, result.remote_ip, result.asn_metro]
     pivots: [result.remote_ip]
     sorts: [result.tcp_latency_us_50 desc 0, result.remote_ip]
     limit: 10
@@ -1000,7 +1000,7 @@
     model: wtrace_base
     explore: result
     type: looker_column
-    fields: [result.agent_asn, result.metro, result.tcp_latency_us_95, result.remote_ip]
+    fields: [result.tcp_latency_us_95, result.remote_ip, result.asn_metro]
     pivots: [result.remote_ip]
     sorts: [result.tcp_latency_us_95 desc 0, result.remote_ip]
     limit: 10

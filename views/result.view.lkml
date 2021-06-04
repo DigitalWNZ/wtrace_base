@@ -78,12 +78,34 @@ view: result {
     suggest_persist_for: "10 minutes"
   }
 
+  dimension: country_code_trim {
+    type: string
+    sql: trim(${country_code}) ;;
+  }
+
+  dimension: agent_asn_trim {
+    type: string
+    sql: trim(${agent_asn}) ;;
+  }
+
+  dimension: metro_trim {
+    type: string
+    sql: trim(${metro}) ;;
+  }
+
+  dimension: asn_metro {
+    type: string
+    sql: concat(${country_code_trim},'||',${agent_asn_trim},'||',${metro});;
+    # html: {{country_code_trim._rendered_value}} || {{agent_asn_trim._rendered_value}} || {{value}} ;;
+    suggest_persist_for: "10 minutes"
+  }
+
   dimension: ping_avg_latency_ms {
     type: number
     sql: ${TABLE}.ping_avg_latency_ms ;;
   }
 
-  dimension: ping_max_latency_ms {
+  dimension: ping_max_latency_ms{
     type: number
     sql: ${TABLE}.ping_max_latency_ms ;;
   }
