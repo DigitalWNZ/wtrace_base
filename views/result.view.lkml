@@ -211,4 +211,10 @@ view: result {
     type: count
     drill_fields: []
   }
+
+  measure: count_distinct_ip {
+    type: count_distinct
+    sql: ${agent_ip} ;;
+    filters: [datetime_date: "3 days"]
+  }
 }
