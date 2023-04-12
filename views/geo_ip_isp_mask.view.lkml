@@ -2,7 +2,8 @@
 view: geo_ip_isp_mask {
   # The sql_table_name parameter indicates the underlying database table
   # to be used for all fields in this view.
-  sql_table_name: `nimble-unison-325208.wtrace.GeoIP_ISP_Mask`
+  # sql_table_name: `nimble-unison-325208.wtrace.GeoIP_ISP_Mask`
+  sql_table_name: `nimble-unison-325208.wtrace.GeoIP_ISP_Mask_2023`
     ;;
   # No primary key is defined for this view. In order to join this view in an Explore,
   # define primary_key: yes on a dimension that has no repeated values.
@@ -13,12 +14,14 @@ view: geo_ip_isp_mask {
 
   dimension: asn {
     type: string
-    sql: ${TABLE}.asn ;;
+    # sql: ${TABLE}.asn ;;
+    sql:${TABLE}.autonomous_system_number;;
   }
 
   dimension: aso {
     type: string
-    sql: ${TABLE}.aso ;;
+    # sql: ${TABLE}.aso ;;
+    sql:${TABLE}.autonomous_system_organization;;
   }
 
   dimension: end_ip {
