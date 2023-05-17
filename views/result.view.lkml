@@ -1,5 +1,5 @@
 view: result {
-  sql_table_name: `qualified-ace-273011.wtrace.result`
+  sql_table_name: `nimble-unison-325208.wtrace.result`
     ;;
 
   dimension: agent_asn {
