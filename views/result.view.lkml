@@ -123,7 +123,7 @@ view: result {
 
   dimension: remote_ip_info {
     type: string
-    sql: if(split(${TABLE}.remote_ip_info,':')[offest(1)]='amazon','amazon','gcp'];;
+    sql: if(split(${TABLE}.remote_ip_info,':')[offest(1)]='amazon','amazon','gcp');;
   }
 
   dimension: response_code {
